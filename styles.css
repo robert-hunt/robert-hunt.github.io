@@ -163,3 +163,81 @@ footer {
 .media-logo:hover {
     transform: scale(1.1);
 }
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.outreach-item {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.outreach-item:last-child {
+    border-bottom: none;
+}
+.outreach-item h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.4em;
+}
+.profile-photo-container {
+    width: 100%;
+    max-width: 1080px; /* Adjust this value to your preferred maximum size */
+    margin: 0 auto 40px; /* Centers the container and adds space below */
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .profile-photo-container {
+        max-width: 800px; /* Slightly smaller on mobile devices */
+    }
+}
+.ongoing-research-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ongoing-research-item {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 1rem;
+}
+
+.ongoing-research-item:last-child {
+    border-bottom: none;
+}
+
+.ongoing-research-item h4 {
+    color: #2c3e50;
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+}
+
+.ongoing-research-item p {
+    margin-top: 0.5rem;
+    color: #333;
+}
