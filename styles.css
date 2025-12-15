@@ -208,3 +208,37 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Make background scroll normally */
+body.home-page {
+    background-image: url('images/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent !important;
+    min-height: 200vh; /* Make page tall enough to scroll */
+}
+
+/* Make the main content fixed so it stays in place */
+.home-page main {
+    position: fixed;
+    top: 200px; /* Move text higher up instead of center */
+    left: 50%;
+    transform: translateX(-50%); /* Only translate horizontally since we're not centering vertically */
+    z-index: 10;
+    padding: 2rem;
+    color: black; /* Make text black */
+    text-align: center; /* Center align the text */
+    font-size: 1.2em; /* Make text slightly bigger */
+}
+
+/* Hide footer on home page since content is fixed */
+.home-page footer {
+    display: none;
+}
+
+/* Adjust header to stay above fixed content */
+.home-page header {
+    position: relative;
+    z-index: 20;
+}
