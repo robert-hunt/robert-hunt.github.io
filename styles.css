@@ -226,12 +226,23 @@ body.home-page {
     left: 50%;
     transform: translateX(-50%); /* Only translate horizontally since we're not centering vertically */
     z-index: 10;
-    padding: 2rem;
+    padding: 0.1rem;
     color: black; /* Make text black */
     text-align: center; /* Center align the text */
     font-size: 1.2em; /* Make text slightly bigger */
+    width: 90%; /* Take up 90% of viewport width */
+    max-width: 800px; /* Don't get too wide on large screens */
 }
 
+/* Mobile responsive adjustments for home page */
+@media screen and (max-width: 768px) {
+    .home-page main {
+        width: 95%; /* Take up more space on mobile */
+        font-size: 1.1em; /* Slightly smaller font on mobile */
+        top: 150px; /* Move slightly higher on mobile */
+        padding: 1rem; /* Add some padding on mobile */
+    }
+}
 /* Hide footer on home page since content is fixed */
 .home-page footer {
     display: none;
