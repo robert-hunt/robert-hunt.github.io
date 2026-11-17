@@ -313,17 +313,11 @@ body.home-page {
 }
 
 /* ---------- Lab members ---------- */
-.member-section {
-    margin-top: 2.5rem;
-    padding-bottom: 0.4rem;
-    border-bottom: 1px solid #bdc3c7;
-}
-
 .member-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
-    gap: 2rem;
-    margin-top: 1.25rem;
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 2rem 1.5rem;
+    margin-top: 1rem;
 }
 
 .member-card {
@@ -332,8 +326,7 @@ body.home-page {
 
 .member-photo {
     position: relative;
-    width: 100%;
-    max-width: 200px;
+    width: 140px;
     aspect-ratio: 1 / 1;
     margin: 0 auto;
     border-radius: 10px;
@@ -349,7 +342,7 @@ body.home-page {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 0.05em;
     color: #8a9aab;
@@ -364,55 +357,19 @@ body.home-page {
 }
 
 .member-card h4 {
-    margin: 0.75rem 0 0.15rem;
+    margin: 0.6rem 0 0.1rem;
     color: #2c3e50;
-    font-size: 1.05rem;
+    font-size: 1rem;
 }
 
 .member-role {
     margin: 0;
     color: #666;
-    font-size: 0.95rem;
-    line-height: 1.4;
+    font-size: 0.9rem;
+    line-height: 1.35;
 }
 
-/* PI: same square card, with bio alongside */
-.pi-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 2.5rem;
-    margin-top: 1.25rem;
-}
-
-.pi-card .member-card {
-    flex: 0 0 200px;
-}
-
-.pi-bio {
-    margin: 0;
-    padding-top: 0.5rem;
-}
-
-@media screen and (max-width: 600px) {
-    .pi-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .pi-card .member-card {
-        flex-basis: auto;
-        width: 200px;
-    }
-}
-
-/* Former members: names only */
-.former-list {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0;
-}
-
-.former-list li {
-    margin: 0.3rem 0;
-    color: #2c3e50;
+.former-members {
+    margin-top: 2.5rem;
+    color: #666;
 }
